@@ -1,0 +1,498 @@
+
+1. Count the number of dinosaurs.
+SELECT COUNT(name)
+FROM dinos;
+331
+
+2. Find all the dinosaurs from the Jurassic period.
+SELECT name FROM dinos WHERE period = 'Jurassic';
+Yuanmousaurus
+Yinlong
+Yingshanosaurus
+Yimenosaurus
+Yangchuanosaurus
+Yandusaurus
+Vulcanodon
+Tuojiangosaurus
+Torvosaurus
+Yunnanosaurus
+Sinraptor
+Stegosaurus
+Seismosaurus
+Segisaurus
+Scutellosaurus
+Scelidosaurus
+Saurophaganax
+Sarcosaurus
+Shunosaurus
+Rhoetosaurus
+Poekilopleuron
+Podokesaurus
+Piatnitzkysaurus
+Proceratosaurus
+Patagosaurus
+Pantydraco
+Datousaurus
+Ornitholestes
+Omeisaurus
+Nqwebasaurus
+Monolophosaurus
+Othnielia
+Megalosaurus
+Massospondylus
+Marshosaurus
+Mamenchisaurus
+Lufengosaurus
+Lophostropheus
+Lexovisaurus
+Metriacanthosaurus
+Lesothosaurus
+Kentrosaurus
+Juravenator
+Jingshanosaurus
+Janenschia
+Huayangosaurus
+Heterodontosaurus
+Kotasaurus
+Guanlong
+Giraffatitan
+Gasosaurus
+Gargoyleosaurus
+Eustreptospondylus
+Europasaurus
+Haplocanthosaurus
+Emausaurus
+Euhelopus
+Elaphrosaurus
+Dubreuillosaurus
+Dryosaurus
+Diplodocus
+Dilophosaurus
+Dicraeosaurus
+Cryolophosaurus
+Compsognathus
+Coelurus
+Chungkingosaurus
+Chirostenotes
+Chinshakiangosaurus
+Chaoyangsaurus
+Dacentrurus
+Cetiosaurus
+Cetiosauriscus
+Ceratosaurus
+Chialingosaurus
+Brachytrachelopan
+Brachiosaurus
+Bellusaurus
+Barosaurus
+Barapasaurus
+Camarasaurus
+Anchisaurus
+Amygdalodon
+Ammosaurus
+Allosaurus
+Agilisaurus
+Apatosaurus
+Lapparentosaurus
+Hesperosaurus
+Camptosaurus
+Aardonyx
+Archaeopteryx
+
+3. Find the total sum length of all the dinosaurs from the Cretaceous period.
+SELECT SUM(length) FROM dinos WHERE period = 'Cretaceous';
+1366.45
+
+4. Find all the dinosaurs from either the Jurassic OR Cretaceous periods, and order them by their species name alphabetically.
+SELECT name FROM dinos WHERE period = 'Jurassic' OR period = 'Cretaceous' ORDER BY species ASC;
+Abakensis
+Aegyptiacus
+Aethiopicus
+Agilis
+Airelensis
+Ajax
+Albertensis
+Albertensis
+Altispinax
+Altispinus
+Altithorax
+Altus
+Altus
+Amicagraphica
+Andrewsi
+Andrewsi
+Antirrhopus
+Apertus
+Aquilunguis
+Aralensis
+Arenatus
+Armatus
+Armatus
+Armatus
+Ashile
+Asiaticus
+Atacis
+Atokensis
+Atopus
+Atopus
+Australis
+Austriacus
+Baharijensis
+Bambergi
+Bashanensis
+Bataar
+Belli
+Bernissartensis
+Bicentesimus
+Bilbeyhallorum
+Blanfordi
+Brachyops
+Bradleyi
+Brancai
+Brevipes
+Brevispinus
+Brevitertius
+Brownei
+Bucklandii
+Bucklandii
+Bullatus
+Burgei
+Byrdi
+Caducus
+Calathocercos
+Calvoi
+Canadensis
+Canadensis
+Canaliculatus
+Carinatus
+Carolinii
+Caroljonesa
+Casuarius
+Cazaui
+Celestae
+Challengeri
+Changii
+Cheloniformis
+Christopheri
+Chulsanensis
+Cincosaltensis
+Colberti
+Comahuensis
+Comahuensis
+Condrayi
+Constructus
+Constructus
+Conybearei
+Copei
+Cubicularis
+Dacus
+Delicatus
+Deserti
+Diagnosticus
+Dispar
+Dixeyi
+Domoculus
+Downsi
+Durobrivensis
+Edwardsorum
+Elliotti
+Ellisoni
+Ernsti
+Fariasi
+Feinbergorum
+Floresi
+Formosus
+Foulkii
+Foxii
+Foxii
+Fragilis
+Fragilis
+Galbinensis
+Garasbae
+Garridoi
+Gigantea
+Giganteus
+Giganteus
+Giganteus
+Gigas
+Gilmorei
+Gobiensis
+Gobiensis
+Gobiensis
+Gonzalezorum
+Gracilicrus
+Gracilis
+Gracilis
+Grangeri
+Halli
+Hallorum
+Hansemanni
+Harrisonii
+Hatcheri
+Hepingensis
+Hermanni
+Hogwartsia
+Holgeri
+Holyokensis
+Homheni
+Hongheensis
+Hongtuyanensis
+Horneri
+Horridus
+Huangi
+Huenei
+Huinculensis
+Inexpectus
+Infernalis
+Insignis
+Ischiadicus
+Itemirensis
+Jiangbeiensis
+Jiangi
+Jiangyiensis
+Jichuanensis
+Johnsoni
+Junghsiensis
+Karibaensis
+Kitadaniensis
+Knopfleri
+Koerneri
+Kuani
+Lambei
+Lammersi
+Lancenis
+Langdoni
+Lattimorei
+Latus
+Lawleri
+Leali
+Leanzai
+Lengi
+Lentus
+Libratus
+Libratus
+Lii
+Lithographica
+Loadsi
+Longiceps
+Longicranialis
+Longipes
+Longus
+Loricatus
+Louderbacki
+Madagascariensis
+Magniventris
+Major
+Makelai
+Maximus
+Maximus
+Mckennai
+Mckillopi
+Mckinleyi
+Mesai
+Millenii
+Mirificus
+Mirus
+Mjosi
+Mongoliensis
+Mongoliensis
+Mongoliensis
+Mongoliensis
+Mongoliensis
+Mongoliensis
+Mongoliensis
+Montanensis
+Multispinus
+Nanus
+Nasicornis
+Navajovius
+Neglectus
+Nesmoi
+Nigeriensis
+Normani
+Notabilis
+Okladnikovi
+Olecranus
+Oliveroi
+Olseni
+Orientalis
+Ornatus
+Osborni
+Oshimai
+Osmolskae
+Ostrommaysorum
+Oxoniensis
+Oxoniensis
+Paravertebra
+Parkeri
+Parkpinorum
+Patagonicus
+Peeblesorum
+Pergracilis
+Philoceratops
+Planinychus
+Plicatospineus
+Polyodon
+Polyzelous
+Portentosus
+Prenes
+Prima
+Primus
+Priscus
+Priscus
+Priscus
+Procurvicornis
+Raptorius
+Regalis
+Remotus
+Rex
+Rex
+Robusta
+Robusta
+Robustus
+Roseae
+Rozhdestvenskyi
+Sachalinensis
+Saharicus
+Saihangaobiensis
+Salerii
+Sanctus
+Sanjuanensis
+Sastrei
+Schaffi
+Scutatus
+Shangyouensis
+Sinensis
+Skarzynskii
+Spinifer
+Spinorhinus
+Starki
+Sternbergi
+Stewarti
+Stromeri
+Sui
+Supremus
+Tagorei
+Taibaii
+Tanneri
+Taqueti
+Tatarinovi
+Tenerensis
+Tereschenkoi
+Tetoriensius
+Textilis
+Thwazi
+Tiguidensis
+Tillettorum
+Topai
+Torosus
+Transsylvanicus
+Tschizhovi
+Tuberiferus
+Tucki
+Tutus
+Valdensis
+Valesdunensis
+Validum
+Velox
+Vivianae
+Walkeri
+Walkeri
+Warrenae
+Wetherilli
+Wichmannianus
+Woodi
+Wucaii
+Wyomingensis
+Xinwaensis
+Yamanpalliensis
+Yangi
+Yanshini
+Yanzigouensis
+Youngi
+Youngi
+Zdanskyi
+Zhaoianus
+Zhongheensis
+Zoui
+
+5. Find all the dinosaurs from the t_order Saurischia that are Herbivorous.
+SELECT name FROM dinos WHERE t_order = 'Saurischia' AND diet = 'Herbivorous';
+Yuanmousaurus
+ Yimenosaurus
+ Vulcanodon
+ Supersaurus
+ Sonidosaurus
+ Seismosaurus
+ Saltasaurus
+ Rebbachisaurus
+ Quaesitosaurus
+ Shunosaurus
+ Rhoetosaurus
+ Plateosaurus
+ Pelorosaurus
+ Patagosaurus
+ Pantydraco
+ Paralititan
+ Datousaurus
+ Pleurocoelus
+ Opisthocoelicaudia
+ Omeisaurus
+ Nigersaurus
+ Neuquenosaurus
+ Nemegtosaurus
+ Mussaurus
+ Maxakalisaurus
+ Malawisaurus
+ Mamenchisaurus
+ Lufengosaurus
+ Magyarosaurus
+ Ligabuesaurus
+ Jobaria
+ Jingshanosaurus
+ Janenschia
+ Isisaurus
+ Hypselosaurus
+ Kotasaurus
+ Guaibasaurus
+ Giraffatitan
+ Europasaurus
+ Haplocanthosaurus
+ Erketu
+ Euhelopus
+ Diplodocus
+ Dicraeosaurus
+ Chubutisaurus
+ Chinshakiangosaurus
+ Cetiosaurus
+ Cetiosauriscus
+ Brachytrachelopan
+ Brachiosaurus
+ Bellusaurus
+ Barosaurus
+ Barapasaurus
+ Austrosaurus
+ Camarasaurus
+ Aragosaurus
+ Antarctosaurus
+ Anchisaurus
+ Amygdalodon
+ Ampelosaurus
+ Amargasaurus
+ Ammosaurus
+ Alamosaurus
+ Apatosaurus
+ Lapparentosaurus
+ Aardonyx
+ Argentinosaurus
+ Aegyptosaurus
+
+6. Find the shortest dinosaur, and rename it Shortie.
+SELECT name FROM dinos ORDER BY length;
+UPDATE dinos
+SET name = 'Shortie'
+WHERE name = 'Liaoxiornis';
+
+7. Find the alphabetically first dinosaur, so we can make sure they're present for class.
+SELECT name FROM dinos ORDER BY name ASC;
+Aardonyx
